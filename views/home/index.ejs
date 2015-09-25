@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<h1> Home </h1>
+		<% if (res == 1){ %>
+			<p>Senha errada </p>
+		<%} else if (res == 2){%>
+			<p>Usuário não existe </p>
+		<% } %>
+		<form method="post" action="../login/">
+			<input type="text" name="username">
+			<input type="password" name="password">
+			<input type="submit" value="Entrar">
+		</form>
+	</body>
+</html>	

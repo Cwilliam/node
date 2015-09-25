@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Adicionar um usuário</h1>
+	<form method="post" action="../user/add">
+		<label>Nome:</label><input type="text" name="name"><br>
+		<label>Usuário:</label><input type="text" name="username"><br>
+		<label>Senha:</label><input type="text" name="password"><br>
+		<input type="hidden" name="token" value="<%- token %>">
+		<input type="submit" value="Cadastrar">
+	</form>	
+</body>
+</html>

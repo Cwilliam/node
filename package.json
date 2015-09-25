@@ -1,0 +1,25 @@
+{
+  "name": "crud",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "will",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "express": "~4.13.3",
+    "body-parser": "~1.14.0",
+    "express-session": "~1.11.3",
+    "express-load": "~1.1.15",
+    "ejs": "~2.3.4",
+    "mongoose": "~4.1.7",
+    "bcrypt": "~0.8.5",
+    "bcrypt-nodejs": "0.0.3",
+    "morgan": "~1.6.1",
+    "method-override": "~2.3.5",
+    "jsonwebtoken": "~5.0.5",
+    "cookie-parser": "~1.4.0"
+  }
+}

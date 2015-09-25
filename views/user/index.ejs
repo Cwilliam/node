@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p><a href="/logout"> Logout </a></p>
+	<hr>
+	<% if(res == 1){ %>
+		<p> Cadastrado </p>
+	<% } else if (res == 3){%>
+		<p> Atualizado com Sucesso </p>
+	<% } else if (res == 4){%>
+		<p> Usuário deletado! </p>
+	<% } %>
+
+	<h2>Adicionar um novo usuário <a href="../user/add?token=<%- token %>">+</a></h2>
+	<ul>
+		<% users.forEach(function(user){ %>
+			<li><%- user.name %></li><a href="/user/delete/<%- user.id %>?token=<%- token %>">Deletar </a>
+			<a href="/user/edit/<%- user.id %>?token=<%- token %>">Editar </a><br> 
+		<% }) %>
+	</ul>
+</body>
+</html>
